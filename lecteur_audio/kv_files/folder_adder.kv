@@ -1,0 +1,19 @@
+FolderChooser:
+    title: "selectionner un repertoire"
+    size_hint: 0.8, 0.6
+    BoxLayout:
+        spacing: "10dp"
+        size_hint: 1, 0.80
+        orientation: "vertical"
+        FolderAdder:
+            id: file_chooser
+        BoxLayout:
+            orientation: "horizontal"
+            size_hint: 1, 0.20
+            Button:
+                id: validate
+                on_press: root.dismiss()
+                on_release: root.react_closefc()
+                text: "valider"
+                font_size: "20sp"
+                background_color: 0.9, 0.9, 0.9, 0.6

@@ -1,0 +1,20 @@
+[
+  {
+    "type": "numeric",
+    "section":  "Parametres de son",
+    "title": "Volume",
+    "key": "volume"
+  },
+  {
+    "type": "bool",
+    "section":  "Parametres de son",
+    "title": "Suivant",
+    "key":  "Next"
+  },
+  {
+    "type": "bool",
+    "section":  "Parametres de son",
+    "title": "Precedent",
+    "key": "Preview"
+  }
+]

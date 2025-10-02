@@ -1,0 +1,29 @@
+#:import w kivy.core.window.Window
+<Box>:
+    orientation:'vertical'
+
+<BarAction@BoxLayout>:
+    orientation: 'vertical'
+    ActionBar:
+        id: action_bar
+        ActionView:
+            ActionPrevious:
+                title: 'Lecteur Audio'
+                #app_icon: "png_boutons/FERME.png"
+            ActionButton:
+                text: 'précédent'
+                icon: 'png_boutons/previous.png'
+                on_press: app.retour_arriere(args[0])
+            ActionToggleButton:
+                id: bascule
+                text: 'Stop'
+                icon: 'png_boutons/FERME.png'
+                state: "normal"
+                #state: app.a_btn2(args[0])
+            ActionButton:
+                id: suivant
+                text: 'suivant'
+                icon: 'png_boutons/next.png'
+                on_press: app.aller_avant(args[0])
+            ActionOverflow:
+BarAction:
